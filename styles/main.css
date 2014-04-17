@@ -1,3 +1,5 @@
+include normalize,
 body {
+  background: #000;
   font-family: tahoma, san-serif;
 }
