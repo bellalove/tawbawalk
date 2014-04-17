@@ -1,0 +1,45 @@
+{
+  "name": "Tawbawalk",
+  "version": "0.0.1",
+  "description": "Tawbawalk Site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "REPOURL"
+  },
+  "keywords": [],
+  "author": "AUTHOR",
+  "license": "LICENSE",
+  "bugs": {
+    "url": "BUGSURL"
+  },
+  "homepage": "HOMEPAGE",
+  "devDependencies": {
+    "http": "0.0.0",
+    "gulp-rename": "^1.2.0",
+    "marked": "^0.3.2",
+    "glob": "^3.2.9",
+    "ecstatic": "^0.5.1",
+    "gulp-embedlr": "^0.5.2",
+    "gulp-concat": "^2.2.0",
+    "gulp-clean": "^0.2.4",
+    "gulp-size": "^0.3.0",
+    "tiny-lr": "0.0.5",
+    "gulp-minify-html": "^0.1.3",
+    "gulp-minify-css": "^0.3.1",
+    "gulp-jade": "^0.5.0",
+    "gulp-livereload": "^1.3.1",
+    "gulp-uglify": "^0.2.1",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-load-plugins": "^0.5.0",
+    "jade": "^1.3.1",
+    "gulp": "^3.6.1",
+    "gulp-jshint": "^1.5.3",
+    "gulp-stylus": "^0.2.1",
+    "gulp-svgmin": "^0.4.5",
+    "gulp-imagemin": "^0.2.0"
+  }
+}

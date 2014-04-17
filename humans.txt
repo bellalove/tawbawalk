@@ -1,0 +1,18 @@
+/* TEAM */
+
+  Frontend Engineer: Rob Muhlestein
+  Twitter: @robmuh
+  From: Catawba Ave, Cornelius, NC, USA
+
+  Designer: Joey Burnett
+  Twitter: @burnettjoey
+  From: Charlotte, NC, USA
+
+  Artist: Joe Dobson
+  WWW: joedobs.com
+
+/* SITE */
+
+   Last update: 2014/04/17
+   Standards: HTML5, CSS3
+   Software: GitHub, Gulp, Stylus, VIM, Adobe CC
