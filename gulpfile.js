@@ -107,7 +107,7 @@ gulp.task('jade', function(){
     .pipe(gulp.dest(htmld));
 });
 
-gulp.task('html', ['plain', 'jade']);
+gulp.task('html', ['plain-html', 'jade']);
 
 //------------------------------- watch ----------------------------------
 
