@@ -6,18 +6,15 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='TODO')
     meta(name='keywords', content='Live Music, Performance, Art, Community, Festival, Entertainment, Creativity, Love, Bella, Food Truck, Fun, Things to do, Inspiration')
-    meta(name='author', content='humans.txt')
     link(rel='shortcut icon', href='favicon.ico')
+    meta(name='author', content='humans.txt')
     link(href='styles/main.min.css', rel='stylesheet', type='text/css')
   body
-    .modal#openmodal
-      .row
-        a(href='http://facebook.com/events/430128370453170')
-          img#modalimg(height='100%' src='images/introAnimationV2.gif')
-
+    a(href='http://facebook.com/events/430128370453170')
+      img(src='images/introAnimationV2.gif')
     section#home
     section#about
     section#entertain
     section#sponsors
     section#contact
-    script document.getElementById('modalimg').src = document.getElementById('modalimg').src + '?' + (new Date()).getTime(); 
+      
