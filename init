@@ -1,0 +1,43 @@
+#!/bin/bash 
+
+# Just a simple shell script to pull down libs and such in a way that
+# should update your `package.json` (as opposed to just calling `npm
+# install` against potentially older versions). Delete this after you
+# run the first time if you like since `package.json` will have
+# everything after that.
+
+ npm install \
+   co \
+   co-body \
+   co-views \
+   koa \
+   koa-common \
+   koa-route \
+   lodash \
+   moment \
+   forever \
+   --save
+
+ npm install \
+   glob \
+   gulp \
+   jade \
+   gulp-watch \
+   gulp-load-plugins \
+   gulp-stylus \
+   gulp-jade \
+   gulp-livereload \
+   gulp-nodemon \
+   gulp-concat \
+   gulp-jshint \
+   gulp-uglify \
+   gulp-autoprefixer \
+   gulp-minify-css \
+   gulp-size \
+   gulp-clean \
+   gulp-rename \
+   gulp-minify-html \
+   gulp-imagemin \
+   gulp-svgmin \
+   koa-livereload \
+   --save-dev
