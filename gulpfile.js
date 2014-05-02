@@ -13,9 +13,6 @@ var htmld = c.clientd,
     p = require("gulp-load-plugins")();
 
 var paths = {
-  stylus: [
-    stylesd + '/**'
-  ],
   clean: [
     c.clientd + '/*.html', 
     c.clientd + '/*.ico',
@@ -82,8 +79,8 @@ gulp.task('scripts',['scripts-plain','scripts-asis','scripts-pkgs',
 
 gulp.task('styles-stylus', function(){
   return gulp.src(c.srcClient + '/styles/**/*.styl')
-    .pipe(p.stylus({path: paths.stylus, errors: true}))
-    .pipe(p.autoprefixer('last 2 versions'))
+    .pipe(p.stylus({ errors: true}))
+    //.pipe(p.autoprefixer('last 2 versions'))
     .pipe(gulp.dest(stylesd))
     .pipe(p.minifyCss({keepSpecialComments: 0}))
     .pipe(p.rename({extname: ".min.css"}))
@@ -166,5 +163,6 @@ gulp.task('watch', function(){
 
 //------------------------------- default --------------------------------
 
-gulp.task('once',['scripts','styles','images','html','assets','views']);
+gulp.task('once',['scripts','styles','html','assets','views']);
+//gulp.task('once',['scripts','styles','images','html','assets','views']);
 gulp.task('default',['once','watch']);
