@@ -201,8 +201,13 @@ table {
   height: 0;
   font-size: 0;
 }
+body {
+  background: #5b5268;
+}
 #modal-container.fullscreen {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -210,7 +215,6 @@ table {
 }
 #modal-row.fullscreen {
   height: 100%;
-  display: block;
 }
 #modal-img.fullscreen {
   height: 100%;
@@ -218,9 +222,36 @@ table {
   vertical-align: middle;
   padding-bottom: 1.1em;
 }
+#modal-container.normal {
+  display: none;
+}
 #modal-row.normal {
   height: auto;
 }
 #modal-img.normal {
   height: auto;
+}
+.fullbar {
+  width: 100%;
+  height: 3em;
+}
+.fullbar.yellow {
+  background: #fff000;
+}
+.fullbar.salmon {
+  background: #f79983;
+}
+.fullbar.blank {
+  background: #5b5268;
+  height: 1em;
+}
+#home,
+#tawba {
+  height: 150%;
+}
+#walk {
+  height: 150%;
+}
+#character {
+  height: 600%;
 }

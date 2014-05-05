@@ -163,6 +163,5 @@ gulp.task('watch', function(){
 
 //------------------------------- default --------------------------------
 
-gulp.task('once',['scripts','styles','html','assets','views']);
-//gulp.task('once',['scripts','styles','images','html','assets','views']);
+gulp.task('once',['scripts','styles','images','html','assets','views']);
 gulp.task('default',['once','watch']);
