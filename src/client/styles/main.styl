@@ -1,19 +1,23 @@
 @import normalize
 @import util
 
+
+
 salmon = #F79983
 tart = #5B5268
 yellow = #FFF000
 purple = #BB4B9B
 grey = #383738
 
-.ruler
-  position fixed
+section
+  width 100%
+  display inline-block
+
+// temporary for sizing
+.container
   top 0
   left 0
-  width 320px
-  height 20px
-  background cyan
+  width 100%
 
 body
   font-smooting()
@@ -50,34 +54,44 @@ body
 #modal-img.normal
   height auto
 
-// full bars
-
-.fullbar
-  width 100%
-  height 3em
-
-.fullbar.yellow
-  background yellow
-
-.fullbar.salmon
-  background salmon
-
-.fullbar.blank
-  background tart
-  height 1em
-
 // home
 
-#home
+.headline
+  width 100%
+  margin 0
+  text-align center
+  background salmon
+  margin 2.5rem 0
 
+.headline img
+  margin -2.0em 
+  padding 0 2em
 
-// header graphic
+#home .character img
+  padding 1em 0em 1em 4em
+  display inline-block
 
-#tawba
-  height 150%
+// food
 
-#walk
-  height 150%
+#food header
+  text-align center
 
-#character
-  height 600%
+#food .headline img
+  width 100%
+
+#food img
+  margin -3rem 0
+
+#food img.flip
+  -moz-transform scaleX(-1)
+  -o-transform scaleX(-1)
+  -webkit-transform scaleX(-1)
+  transform scaleX(-1)
+  filter  FlipH
+  -ms-filter "FlipH"
+
+#food  h1
+    color yellow
+    font-size 4em
+    font-face bold
+

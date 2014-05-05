@@ -10,43 +10,61 @@ html
     link(rel='shortcut icon', href='favicon.ico')
     link(href='styles/main.min.css', rel='stylesheet', type='text/css')
   body
-    //.fullscreen#modal-container
-     // .fullscreen#modal-row
-      //  img.fullscreen#modal-img(src='images/introAnimationV2.gif')
+    .container
 
-   .ruler 
+      section#home
+        .header
+          .headline
+            img(src='images/tawba.png')
+          .character
+            img(src='images/header-character.png')
+          .headline
+            img(src='images/walk.png')
 
-    section#home
-      #header-graphic
-        .fullbar.tart
-        .fullbar.salmon
-          img#tawba(src='images/tawba.png')
-        .fullbar.tart
-          img#character(src='images/header-character.png')
-        .fullbar.salmon
-          img#walk(src='images/walk.png')
+      section#music
+        header
+          h1 Musical Mayhem
+        ul
+          li#hawthornes The Hawthornes
+          li#knowne Knowne Ghost
+          li#noma Noma Trio
+          li#laylo Laylo
+          li#message The Message
+          li#louis Louis Beeler
+          li#lee Bryan Lee
+          li#arsena Arsena Schroeder
+          li#ingram Frederick Ingram
+          li#nikki Nikki Fellows
+          li#haley Haley Vogel
+          li#mike Mike Alicke Band
+          li#carter Carter Jones
+          li#analise Analise Malick
 
-    section#music
-      ul
-        li#mayhem Musical Mayhem
-        li#hawthornes The Hawthornes
-        li#knowne Knowne Ghost
-        li#noma Noma Trio
-        li#laylo Laylo
-        li#message The Message
-        li#louis Louis Beeler
-        li#lee Bryan Lee
-        li#arsena Arsena Schroeder
-        li#ingram Frederick Ingram
-        li#nikki Nikki Fellows
-        li#haley Haley Vogel
-        li#mike Mike Alicke Band
-        li#carter Carter Jones
-        li#analise Analise Malick
+      section#food
+        header
+          .headline
+            img.flip(src='images/foodtruck-fleet.png')
+            h1 Food Truck Fleet
+            img(src='images/foodtruck-fleet.png')
 
-    section#entertain
+      section#bubbles
+        ul.bubbles
+          li.right-down Vivacious Vendors
+          li.left-up Brilliant Businesses
+          li.right-up Angelic Artists
+          li.right-down Creative Craftsman
 
+      section#about
+        header
+          h1 'Tawba Walk
+          h3 An Arts and Music Festival
+          p.
+            This is that sentence.
+            This is that sentence.
+            This is that sentence.
+            This is that sentence.
 
-    section#sponsors
-    section#contact
+      section#sponsors
+      section#contact
+
     script(src='scripts/after.min.js')

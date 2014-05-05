@@ -201,13 +201,14 @@ table {
   height: 0;
   font-size: 0;
 }
-.ruler {
-  position: fixed;
+section {
+  width: 100%;
+  display: inline-block;
+}
+.container {
   top: 0;
   left: 0;
-  width: 320px;
-  height: 20px;
-  background: #0ff;
+  width: 100%;
 }
 body {
   background: #5b5268;
@@ -239,27 +240,43 @@ body {
 #modal-img.normal {
   height: auto;
 }
-.fullbar {
+.headline {
   width: 100%;
-  height: 3em;
-}
-.fullbar.yellow {
-  background: #fff000;
-}
-.fullbar.salmon {
+  margin: 0;
+  text-align: center;
   background: #f79983;
+  margin: 2.5rem 0;
 }
-.fullbar.blank {
-  background: #5b5268;
-  height: 1em;
+.headline img {
+  margin: -2em;
+  padding: 0 2em;
 }
-#home,
-#tawba {
-  height: 150%;
+#home img {
+  width: 100%;
 }
-#walk {
-  height: 150%;
+#home .character img {
+  padding: 1em 0em 1em 4em;
+  display: inline-block;
 }
-#character {
-  height: 600%;
+#food header {
+  text-align: center;
+}
+#food .headline img {
+  width: 100%;
+}
+#food img {
+  margin: -3rem 0;
+}
+#food img.flip {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+#food h1 {
+  color: #fff000;
+  font-size: 4em;
+  font-face: bold;
 }
