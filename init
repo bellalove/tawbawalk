@@ -22,7 +22,8 @@
    glob \
    gulp \
    jade \
-   gulp-watch \
+   marked \
+   gulp-traceur \
    gulp-load-plugins \
    gulp-stylus \
    gulp-jade \
