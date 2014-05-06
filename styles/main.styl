@@ -10,6 +10,12 @@ yellow = #FFF000
 purple = #BB4B9B
 grey = #383738
 
+.y
+  background yellow
+
+.p
+  background purple
+
 #container
   width 100%
   overflow hidden
@@ -50,10 +56,45 @@ body
   #character
     padding 2em 0 0 2em 
 
-// food
+// music
 
-#food header
-  text-align center
+#mahem
+  color white
+  text-transform uppercase
+  font-size 2.0em
+  font-family freeroad_blackregular
+  margin 0 0 .5em 0
+
+.music-act
+  font-family freeroadregular
+  font-weight bold
+  font-size 2.0em
+  display inline-block
+  box-shadow .1em .1em 0.1em .1em black
+  text-transform uppercase
+  white-space nowrap
+  line-height .5em
+  margin .1em
+
+#noma 
+  font-size 3.1em
+
+#laylo 
+  font-size 3.0em
+
+#hawthornes,  #lee, #message
+  font-size 2.5em
+
+#ambrosial
+  font-size 2.25em
+
+#carter, #knowne
+  font-size 2.0em
+
+#louis, #haley, #nikki, #analise, #arsena
+  font-size 1.5em
+
+// food
 
 #food .headline img
   width 100%
@@ -62,6 +103,8 @@ body
 
 #food img
   margin -3rem 0
+  position relative
+  z-index 1
 
 #food img.flip
   -moz-transform scaleX(-1)
@@ -70,11 +113,18 @@ body
   transform scaleX(-1)
   filter  FlipH
   -ms-filter "FlipH"
+  position relative
+  z-index 0 
 
-#food  h1
-    color yellow
-    font-size 4em
-    font-face bold
+#ftf
+  position relative
+  z-index 1
+  font-family freeroad_blackregular
+  font-weight bold
+  font-size 3em
+  color yellow
+  font-face bold
+  padding .2em 0
 
 // about
 
@@ -105,13 +155,17 @@ body
 // sponsors
 
 #sponsors
-  margin-bottom 3em
+  margin-bottom 1em
+  padding-bottom 1em
   font-family Dalle, san-serif
   font-size 3em
   background white
   text-align center
   img
     padding 5% 5%
+
+.tier-3
+  padding-bottom 20em
 
 #hendrick
   img
@@ -123,12 +177,18 @@ body
 #kadi
   img
     padding 0
-    margin -20%
+    margin -25%
 
-@media only screen and (min-width:20em)
+@media only screen and (min-width:20rem)
   #ginger
     font-size .7em
 
-@media only screen and (min-width:27em)
+@media only screen and (min-width:27rem)
   #ginger
     font-size 1em
+
+@media only screen and (min-width:30rem)
+  .tier-3
+    font-size 1.1em
+  #mahem
+    font-size 3.0em

@@ -9,32 +9,24 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'GeoSansLight';
-    src: url('geosanslight-webfont.eot');
-    src: url('geosanslight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('geosanslight-webfont.woff') format('woff'),
-         url('geosanslight-webfont.ttf') format('truetype'),
-         url('geosanslight-webfont.svg#geosanslightregular') format('svg');
+    font-family: 'freeroadregular';
+    src: url('freeroad_regular-webfont.eot');
+    src: url('freeroad_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('freeroad_regular-webfont.woff') format('woff'),
+         url('freeroad_regular-webfont.ttf') format('truetype'),
+         url('freeroad_regular-webfont.svg#freeroadregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 @font-face {
-    font-family: 'GeoSansLightOblique';
-    src: url('geosanslight-oblique-webfont.eot');
-    src: url('geosanslight-oblique-webfont.eot?#iefix') format('embedded-opentype'),
-         url('geosanslight-oblique-webfont.woff') format('woff'),
-         url('geosanslight-oblique-webfont.ttf') format('truetype'),
-         url('geosanslight-oblique-webfont.svg#geosanslightmedium_italic') format('svg');
+    font-family: 'freeroad_blackregular';
+    src: url('freeroad_black-webfont.eot');
+    src: url('freeroad_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('freeroad_black-webfont.woff') format('woff'),
+         url('freeroad_black-webfont.ttf') format('truetype'),
+         url('freeroad_black-webfont.svg#freeroad_blackregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}@font-face {
-    font-family: 'BebasNeue';
-    src: url('BebasNeue-webfont.eot');
-    src: url('BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
-         url('BebasNeue-webfont.woff') format('woff'),
-         url('BebasNeue-webfont.ttf') format('truetype'),
-         url('BebasNeue-webfont.svg#bebas_neueregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
+}

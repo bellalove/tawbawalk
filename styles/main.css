@@ -205,6 +205,12 @@ ul {
   height: 0;
   font-size: 0;
 }
+.y {
+  background: #fff000;
+}
+.p {
+  background: #bb4b9b;
+}
 #container {
   width: 100%;
   overflow: hidden;
@@ -240,8 +246,48 @@ body {
 #home #character {
   padding: 2em 0 0 2em;
 }
-#food header {
-  text-align: center;
+#mahem {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: freeroad_blackregular;
+  margin: 0 0 0.5em 0;
+}
+.music-act {
+  font-family: freeroadregular;
+  font-weight: bold;
+  font-size: 2em;
+  display: inline-block;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #000;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 0.5em;
+  margin: 0.1em;
+}
+#noma {
+  font-size: 3.1em;
+}
+#laylo {
+  font-size: 3em;
+}
+#hawthornes,
+#lee,
+#message {
+  font-size: 2.5em;
+}
+#ambrosial {
+  font-size: 2.25em;
+}
+#carter,
+#knowne {
+  font-size: 2em;
+}
+#louis,
+#haley,
+#nikki,
+#analise,
+#arsena {
+  font-size: 1.5em;
 }
 #food .headline img {
   width: 100%;
@@ -250,6 +296,8 @@ body {
 }
 #food img {
   margin: -3rem 0;
+  position: relative;
+  z-index: 1;
 }
 #food img.flip {
   -moz-transform: scaleX(-1);
@@ -258,11 +306,18 @@ body {
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
+  position: relative;
+  z-index: 0;
 }
-#food h1 {
+#ftf {
+  position: relative;
+  z-index: 1;
+  font-family: freeroad_blackregular;
+  font-weight: bold;
+  font-size: 3em;
   color: #fff000;
-  font-size: 4em;
   font-face: bold;
+  padding: 0.2em 0;
 }
 #about {
   padding-bottom: 2em;
@@ -295,7 +350,8 @@ body {
   height: auto;
 }
 #sponsors {
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
   font-family: Dalle, san-serif;
   font-size: 3em;
   background: #fff;
@@ -303,6 +359,9 @@ body {
 }
 #sponsors img {
   padding: 5% 5%;
+}
+.tier-3 {
+  padding-bottom: 20em;
 }
 #hendrick img {
   padding-top: 10%;
@@ -312,15 +371,23 @@ body {
 }
 #kadi img {
   padding: 0;
-  margin: -20%;
+  margin: -25%;
 }
-@media only screen and (min-width: 20em) {
+@media only screen and (min-width: 20rem) {
   #ginger {
     font-size: 0.7em;
   }
 }
-@media only screen and (min-width: 27em) {
+@media only screen and (min-width: 27rem) {
   #ginger {
     font-size: 1em;
+  }
+}
+@media only screen and (min-width: 30rem) {
+  .tier-3 {
+    font-size: 1.1em;
+  }
+  #mahem {
+    font-size: 3em;
   }
 }
