@@ -1,0 +1,7 @@
+@font-face {
+  font-family: Dalle;
+  src: url("dalle_typeface-webfont.eot");
+  src: url("dalle_typeface-webfont.eot?#iefix") format('embedded-opentype'), url("dalle_typeface-webfont.woff") format('woff'), url("dalle_typeface-webfont.ttf") format('truetype'), url("dalle_typeface-webfont.svg#dalleregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,8 +1,6 @@
 @import normalize
 @import util
-
-// busted in current stylus
-//@import myfonts
+@import fonts
 
 salmon = #F79983
 tart = #5B5268
@@ -10,20 +8,50 @@ yellow = #FFF000
 purple = #BB4B9B
 grey = #383738
 
-#container
-  width 100%
-
-img
-  width 100%
-
 section
   width 100%
   display inline-block
-  text-align center
+
+// temporary for sizing
+.container
+  top 0
+  left 0
+  width 100%
 
 body
   font-smooting()
   background tart
+
+// fullscreen modal
+
+#modal-container.fullscreen
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  text-align center
+  background black
+
+#modal-row.fullscreen
+  height 100%
+
+#modal-img.fullscreen
+  height 100%
+  display inline-block
+  vertical-align middle
+  padding-bottom 1.1em
+
+// normal modal
+
+#modal-container.normal
+  display none
+
+#modal-row.normal
+  height auto
+
+#modal-img.normal
+  height auto
 
 // headline
 
@@ -32,22 +60,18 @@ body
   margin 0
   text-align center
   background salmon
-  margin-top 2.5rem
-  margin-bottom 2.5rem
+  margin 2.5rem 0
 
 .headline img
   width 100%
 
 // home
 
-#home
-  #tawba
-    margin 3em 0 0 0
-  .headline
-    img
-      margin -2em 0
-  #character
-    padding 2em 0 0 2em 
+#home .headline
+  margin -2em 0
+
+#home .character
+  text-align center
 
 // food
 
@@ -78,49 +102,41 @@ body
 // about
 
 #about
-  padding-bottom 2em
-  margin-bottom 3em
-  background salmon
   text-align center
-  h1, h2, h3
-    color yellow
-  #past 
-    margin-top -3em
-    width 100%
 
-#recap-video
+#about h1, h2, h3
+  color yellow
+
+#about #past 
+  margin-top -3em
+  width 100%
+
+.recap-video
   display inline-block
   background black
   opacity(0.5)
 
-#maps #two
+.maps #two
   padding 6em 0 4em 0
   display none
 
-#maps
+.maps #big
   width 100%
   height auto
 
 // sponsors
 
 #sponsors
-  font-family Dalle, san-serif
-  font-size 3em
+  font-family courier, san-serif
+  text-transform uppercase
+
+#sponsors li
+  width 100%
   background white
-  text-align center
-  img
-    padding .6em .4em
+
+#sponsors li img
+  width 100%
 
 #hendrick
-  img
-    padding-top .8em
-
-#kadi
-  img
-    padding 0
-    margin -1.7em
-
-#ginger
-  font-size 0.9em
-
+  display none
 

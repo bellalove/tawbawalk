@@ -118,7 +118,7 @@ body
 #kadi
   img
     padding 0
-    margin -1.7em
+    margin -1em
 
 #ginger
   font-size 0.9em

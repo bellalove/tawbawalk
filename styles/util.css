@@ -5,6 +5,10 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 .off {
   display: none;
 }

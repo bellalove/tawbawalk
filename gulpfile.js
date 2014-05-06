@@ -96,7 +96,7 @@ gulp.task('styles-stylus', function(){
 });
 
 gulp.task('styles-asis', function(){
-  return gulp.src(c.srcClient + '/styles/*.!(styl)')
+  return gulp.src(c.srcClient + '/styles/**/*!(.styl)')
     .pipe(gulp.dest(stylesd));
 });
 
