@@ -457,6 +457,10 @@ body {
 }
 #contact div {
   display: inline-block;
+  vertical-align: top;
+}
+#contact .copy {
+  text-align: center;
 }
 #footer {
   padding: 1em;
