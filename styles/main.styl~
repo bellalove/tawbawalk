@@ -182,17 +182,18 @@ body
 // sponsors
 
 #sponsors
-  margin-bottom 1em
-  padding-bottom 1em
+  margin-bottom .7em
+  padding-bottom .7em
   font-family Dalle, san-serif
   font-size 3em
   background white
   text-align center
   img
     padding 5% 5%
-
-.tier-3
-  padding-bottom 2em
+  a
+    text-decoration none
+  a:hover
+    color blue
 
 #hendrick
   img
