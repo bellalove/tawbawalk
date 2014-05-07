@@ -1,8 +1,6 @@
 @import normalize
 @import util
-
-// busted in current stylus
-//@import myfonts
+//@import fonts
 
 salmon = #F79983
 tart = #5B5268
@@ -126,6 +124,24 @@ body
   font-face bold
   padding .2em 0
 
+#bubbles
+  font-family freeroad_blackregular
+  font-weight bold
+  font-size 1.5em
+  color tart
+  margin-bottom 2.5em
+  margin-top 1em
+  .long
+    font-size 0.8em
+  .right-down, .right-up, .left-down, .left-up
+    padding .3em 1em
+    margin .2em 0
+    text-transform uppercase
+    width auto 
+    display inline-block
+    background white
+    border-radius 25px
+
 // about
 
 #about
@@ -140,9 +156,15 @@ body
     width 100%
 
 #recap-video
-  display inline-block
+  position relative
   background black
-  opacity(0.5)
+  padding-bottom 56.25%
+  iframe
+    position absolute
+    top 0
+    left 0
+    height 100%
+    width 100%
 
 #maps #two
   padding 6em 0 4em 0

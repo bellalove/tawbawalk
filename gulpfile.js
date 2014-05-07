@@ -163,7 +163,7 @@ gulp.task('watch', function(){
   var u = function(file) {lr.changed(file.path);};
   gulp.watch(c.srcClient + '/styles/**/*', ['styles']).on('change',u);
   gulp.watch(c.srcClient + '/scripts/**/*', ['scripts']).on('change',u);
-  gulp.watch(c.srcClient + '/images/**/*', ['images']).on('change',u);
+  //gulp.watch(c.srcClient + '/images/**/*', ['images']).on('change',u);
   gulp.watch(c.srcClient + '/html/**/*', ['html']).on('change',u);
   gulp.watch(c.srcClient + '/assets/**/*', ['assets']).on('change',u);
   gulp.watch(c.srcClient + '/views/**/*', ['views']).on('change',u);
@@ -171,5 +171,6 @@ gulp.task('watch', function(){
 
 //------------------------------- default --------------------------------
 
-gulp.task('once',['scripts','styles','images','html','assets','views']);
+//gulp.task('once',['scripts','styles','images','html','assets','views']);
+gulp.task('once',['scripts','styles','html','assets','views']);
 gulp.task('default',['once','watch']);

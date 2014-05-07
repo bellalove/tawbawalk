@@ -319,6 +319,29 @@ body {
   font-face: bold;
   padding: 0.2em 0;
 }
+#bubbles {
+  font-family: freeroad_blackregular;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #5b5268;
+  margin-bottom: 2.5em;
+  margin-top: 1em;
+}
+#bubbles .long {
+  font-size: 0.8em;
+}
+#bubbles .right-down,
+#bubbles .right-up,
+#bubbles .left-down,
+#bubbles .left-up {
+  padding: 0.3em 1em;
+  margin: 0.2em 0;
+  text-transform: uppercase;
+  width: auto;
+  display: inline-block;
+  background: #fff;
+  border-radius: 25px;
+}
 #about {
   padding-bottom: 2em;
   margin-bottom: 3em;
@@ -335,11 +358,16 @@ body {
   width: 100%;
 }
 #recap-video {
-  display: inline-block;
+  position: relative;
   background: #000;
-  zoom: 1;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  padding-bottom: 56.25%;
+}
+#recap-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 #maps #two {
   padding: 6em 0 4em 0;
