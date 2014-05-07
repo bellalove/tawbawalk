@@ -160,6 +160,11 @@ body
     margin-top -3em
     width 100%
 
+#pre-video
+  display inline-block
+  text-align left
+  width 90%
+
 #recap-video
   position relative
   background black
@@ -192,6 +197,7 @@ body
     padding 5% 5%
   a
     text-decoration none
+    color blaca
   a:hover
     color blue
 
