@@ -8,6 +8,19 @@ yellow = #FFF000
 purple = #BB4B9B
 grey = #383738
 
+a, a:visited
+  text-decoration none
+  color black
+
+a:hover
+  color blue
+
+.copy
+  display inline-block
+  text-align left
+  width 90%
+  margin 1em
+
 .y
   background yellow
 
@@ -155,15 +168,10 @@ body
   h1, h2, h3
     color yellow
     font-family freeroad_blackregular
-    margin 0
   #past 
     margin-top -3em
     width 100%
 
-#pre-video, #post-video
-  display inline-block
-  text-align left
-  width 90%
 
 #recap-video
   position relative
@@ -195,11 +203,6 @@ body
   text-align center
   img
     padding 5% 5%
-  a, a:visited
-    text-decoration none
-    color black
-  a:hover
-    color blue
 
 #hendrick
   img
@@ -212,6 +215,30 @@ body
   img
     padding 0
     margin -25%
+
+// contact
+
+#contact
+  padding 1em
+  background salmon
+  font-family freeroadregular
+  text-transform uppercase
+  text-align center
+  h1, h2, h3
+    font-family freeroad_blackregular
+  h1
+    font-size 3em
+    color yellow
+    margin-top 0.3em
+  h2
+    font-size 2em
+    margin-left 1em
+  div
+    display inline-block
+
+#footer
+  padding 1em
+  font-family sans-serif
 
 @media only screen and (min-width:20rem)
   #ginger

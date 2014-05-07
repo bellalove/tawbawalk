@@ -181,11 +181,29 @@ table {
   border-spacing: 0;
 }
 *,
-*:before,
-*:after {
+*:after,
+*:before {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  margin-before: 0;
+  -webkit-margin-before: 0;
+  -moz-margin-before: 0;
+  margin-after: 0;
+  -webkit-margin-after: 0;
+  -moz-margin-after: 0;
+  margin: 0;
+  -webkit-margin: 0;
+  -moz-margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  -webkit-margin: 0;
+  -moz-margin: 0;
 }
 ul {
   list-style: none;
@@ -204,6 +222,20 @@ ul {
   clear: both;
   height: 0;
   font-size: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #00f;
+}
+.copy {
+  display: inline-block;
+  text-align: left;
+  width: 90%;
+  margin: 1em;
 }
 .y {
   background: #fff000;
@@ -356,17 +388,10 @@ body {
 #about h3 {
   color: #fff000;
   font-family: freeroad_blackregular;
-  margin: 0;
 }
 #about #past {
   margin-top: -3em;
   width: 100%;
-}
-#pre-video,
-#post-video {
-  display: inline-block;
-  text-align: left;
-  width: 90%;
 }
 #recap-video {
   position: relative;
@@ -399,14 +424,6 @@ body {
 #sponsors img {
   padding: 5% 5%;
 }
-#sponsors a,
-#sponsors a:visited {
-  text-decoration: none;
-  color: #000;
-}
-#sponsors a:hover {
-  color: #00f;
-}
 #hendrick img {
   padding-top: 10%;
 }
@@ -416,6 +433,34 @@ body {
 #kadi img {
   padding: 0;
   margin: -25%;
+}
+#contact {
+  padding: 1em;
+  background: #f79983;
+  font-family: freeroadregular;
+  text-transform: uppercase;
+  text-align: center;
+}
+#contact h1,
+#contact h2,
+#contact h3 {
+  font-family: freeroad_blackregular;
+}
+#contact h1 {
+  font-size: 3em;
+  color: #fff000;
+  margin-top: 0.3em;
+}
+#contact h2 {
+  font-size: 2em;
+  margin-left: 1em;
+}
+#contact div {
+  display: inline-block;
+}
+#footer {
+  padding: 1em;
+  font-family: sans-serif;
 }
 @media only screen and (min-width: 20rem) {
   #ginger {

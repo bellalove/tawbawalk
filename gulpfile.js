@@ -14,7 +14,15 @@ var htmld = c.clientd,
 
 var paths = {
   stylus: [
-    stylesd + '/**'
+    c.srcClient + '/**/*.styl'
+  ],
+  stylusSrc: [
+    c.srcClient + '/styles/**/*.styl',
+    '!' + c.srcClient + '/styles/**/*~'
+  ],
+  stylesAsis: [
+    c.srcClient + '/styles/**/*',
+    '!' + c.srcClient + '/styles/**/*{~,.styl}'
   ],
   clean: [
     c.clientd + '/*.html', 
@@ -86,7 +94,7 @@ gulp.task('scripts',['scripts-plain','scripts-asis','scripts-pkgs',
 //------------------------------- styles ---------------------------------
 
 gulp.task('styles-stylus', function(){
-  return gulp.src(c.srcClient + '/styles/**/*.styl')
+  return gulp.src(paths.stylusSrc)
     .pipe(p.stylus({path: paths.stylus, errors: true}))
     //.pipe(p.autoprefixer('last 2 versions'))
     .pipe(gulp.dest(stylesd))
@@ -96,7 +104,7 @@ gulp.task('styles-stylus', function(){
 });
 
 gulp.task('styles-asis', function(){
-  return gulp.src(c.srcClient + '/styles/**/*!(.styl)')
+  return gulp.src(paths.stylesAsis)
     .pipe(gulp.dest(stylesd));
 });
 

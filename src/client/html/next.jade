@@ -55,7 +55,7 @@ html
         img#past(src='images/past-pics.png')
         h1 &lsquo;Tawba Walk
         h3 An Arts and Music Festival
-        #pre-video
+        .copy
           p.
             The 'Tawba Walk Arts & Music Festival is back in action and bigger than
             ever before! Mark your calendars and get ready for an all-local experience
@@ -63,7 +63,7 @@ html
             groups, food trucks, microbreweries, and much more!
         #recap-video
           iframe(src='//www.youtube.com/embed/EzsuLH0YolA', frameborder='0', allowfullscreen)
-        #post-video
+        .copy
           p.
             Join us on Saturday, May 17th from 2-8 pm in Old Town Cornelius for a
             one-of-a-kind, community-inspired street festival that is sure to leave
@@ -135,6 +135,23 @@ html
           #sweets: a(href='http://bwsweetsbakery.com') BW Sweets
 
       section#contact
-        p this is the contact section
+        h1 Contact
+        .copy: p. 
+          We want to hear from you! Contact us for ways to get connected or to
+          find out more about an upcoming event.
+        #address
+          h3 Address
+          .copy: p.
+            21325 Catawba Ave, Cornelius,<br>
+            North Carolina, 28031
+        #phone
+          h3 Phone
+          .copy: a(href='tel:513-293-0569') 513-293-0569
+        #email
+          h3 Email
+          .copy: a(href='mailto:info@bellalove.org') info@bellalove.org
+
+      #footer
+        &copy; 2014 Bellalove, Inc.
 
     script(src='scripts/after.min.js')
