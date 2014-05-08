@@ -46,10 +46,30 @@ html
 
       section#bubbles
         .bubbles
-          .right-down Vivacious Vendors
-          .left-up.long Brilliant Businesses
-          .right-up Angelic Artists
-          .right-down.long Creative Craftsman
+          #vivacious
+            .bubble Vivacious Vendors
+            .right-down
+              img(src='images/bubble-point.png')
+            .exclamation
+              img(src='images/exclamation.png')
+          #brilliant
+            .left-up
+              img(src='images/bubble-point.png')
+            .bubble Brilliant Businesses
+            .exclamation
+              img(src='images/exclamation.png')
+          #angelic
+            .bubble Angelic Artists
+            .right-up
+              img(src='images/bubble-point.png')
+            .exclamation
+              img(src='images/exclamation.png')
+          #creative
+            .bubble Creative Craftsman
+            .right-down
+              img(src='images/bubble-point.png')
+            .exclamation
+              img(src='images/exclamation.png')
 
       section#about
         img#past(src='images/past-pics.png')
@@ -152,6 +172,6 @@ html
           .copy: a(href='mailto:info@bellalove.org') info@bellalove.org
 
       #footer
-        &copy; 2014 Bellalove, Inc.
+        p &copy; 2014 Bellalove, Inc.
 
     script(src='scripts/after.min.js')
