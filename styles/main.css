@@ -285,16 +285,18 @@ body {
   font-family: freeroad_blackregular;
   margin: 0 0 0.5em 0;
 }
+#music-acts {
+  display: inline-block;
+}
 .music-act {
+  display: inline-block;
+  line-height: 0.5em;
+  margin: 0.25em 0.2em 0.2em 0;
   font-family: freeroadregular;
   font-weight: bold;
   font-size: 2em;
-  display: inline-block;
-  box-shadow: 0.1em 0.1em 0.1em 0.1em #000;
   text-transform: uppercase;
   white-space: nowrap;
-  line-height: 0.5em;
-  margin: 0.1em;
 }
 #noma {
   font-size: 3.1em;
@@ -311,11 +313,11 @@ body {
   font-size: 2.25em;
 }
 #carter,
-#knowne {
+#knowne,
+#haley {
   font-size: 2em;
 }
 #louis,
-#haley,
 #nikki,
 #analise,
 #arsena {
