@@ -116,7 +116,10 @@ body
 #laylo 
   font-size 3.0em
 
-#hawthornes,  #lee, #message
+#hawthornes
+  font-size 2.3em
+
+#lee, #message
   font-size 2.5em
 
 #ambrosial
@@ -297,6 +300,10 @@ body
 #ginger
   font-size .6em
 
+#pawn
+  img
+    margin -20%
+
 #kadi
   img
     padding 0
@@ -341,24 +348,40 @@ body
   padding 1em
   font-family sans-serif
 
-@media only screen and (min-width:20em)
+//------------- small (every 2em) ----------------//
+
+
+@media only screen and (min-width:20.063em) // >320
   #ginger
     font-size .7em
-  #ftf
-    font-size 4em
-  #mahem
-    font-size 2.5em
-  #bubbles
-    font-size 2em
+
+@media only screen and (min-width:22.063em) // >352
+  #ginger
+    font-size .8em
+
+@media only screen and (min-width:24.063em) // >384
+  #ginger
+    font-size .9em
+  #contact
+    font-size 1.4em
   #about
     font-size 1.5em
-  #contact
-    font-size 1.5em
+  #bubbles
+    font-size 1.8em
+  #ftf
+    font-size 4.0em
+  #mahem
+    font-size 2.4em
 
-@media only screen and (min-width:27em)
+//@media only screen and (min-width:26.063em) // >416
+
+@media only screen and (min-width:28.063em) // >448
   #ginger
     font-size 1em
 
-@media only screen and (min-width:30em)
-  .tier-3
-    font-size 1.1em
+//----------- medium (every 3em) ----------------//
+
+//@media only screen and (min-width:30.063em) // >480
+
+//------------ large (every 4 em) ---------------//
+

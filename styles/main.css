@@ -304,7 +304,9 @@ body {
 #laylo {
   font-size: 3em;
 }
-#hawthornes,
+#hawthornes {
+  font-size: 2.3em;
+}
 #lee,
 #message {
   font-size: 2.5em;
@@ -550,6 +552,9 @@ body {
 #ginger {
   font-size: 0.6em;
 }
+#pawn img {
+  margin: -20%;
+}
 #kadi img {
   padding: 0;
   margin: -25%;
@@ -599,36 +604,38 @@ body {
   padding: 1em;
   font-family: sans-serif;
 }
-@media only screen and (min-width: 20rem) {
+@media only screen and (min-width: 20.063em) {
   #ginger {
     font-size: 0.7em;
+  }
+}
+@media only screen and (min-width: 22.063em) {
+  #ginger {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 24.063em) {
+  #ginger {
+    font-size: 0.9em;
+  }
+  #contact {
+    font-size: 1.4em;
+  }
+  #about {
+    font-size: 1.5em;
+  }
+  #bubbles {
+    font-size: 1.8em;
   }
   #ftf {
     font-size: 4em;
   }
   #mahem {
-    font-size: 2.5em;
-  }
-  #bubbles {
-    font-size: 2em;
-  }
-  #about {
-    font-size: 1.5em;
-  }
-  #contact {
-    font-size: 1.5em;
+    font-size: 2.4em;
   }
 }
-@media only screen and (min-width: 27rem) {
+@media only screen and (min-width: 28.063em) {
   #ginger {
     font-size: 1em;
-  }
-}
-@media only screen and (min-width: 30rem) {
-  .tier-3 {
-    font-size: 1.1em;
-  }
-  #mahem {
-    font-size: 4em;
   }
 }
