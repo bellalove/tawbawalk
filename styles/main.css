@@ -603,6 +603,21 @@ body {
   #ginger {
     font-size: 0.7em;
   }
+  #ftf {
+    font-size: 4em;
+  }
+  #mahem {
+    font-size: 2.5em;
+  }
+  #bubbles {
+    font-size: 2em;
+  }
+  #about {
+    font-size: 1.5em;
+  }
+  #contact {
+    font-size: 1.5em;
+  }
 }
 @media only screen and (min-width: 27rem) {
   #ginger {
@@ -614,6 +629,6 @@ body {
     font-size: 1.1em;
   }
   #mahem {
-    font-size: 3em;
+    font-size: 4em;
   }
 }
