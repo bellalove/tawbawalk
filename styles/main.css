@@ -573,7 +573,6 @@ body {
 }
 #contact h2 {
   font-size: 2em;
-  margin-left: 1em;
 }
 #contact div {
   display: inline-block;
@@ -581,6 +580,20 @@ body {
 }
 #contact .copy {
   text-align: center;
+}
+#phone .copy,
+#email .copy,
+#facebook .copy {
+  min-width: 12em;
+  margin-left: 0.7em;
+}
+#facebook {
+  display: inline-block;
+  text-align: center;
+}
+#facebook img {
+  height: 3em;
+  width: auto;
 }
 #footer {
   padding: 1em;
