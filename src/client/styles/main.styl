@@ -2,6 +2,11 @@
 @import util
 //@import fonts
 
+// layout-only
+//@import em-grid
+//#em-grid
+//  opacity(0.2)
+
 //--- mobile-first default 20em (320px) portrait------//
 
 salmon = #F79983
@@ -52,6 +57,7 @@ a:hover
 #container
   width 100%
   overflow hidden
+  text-align center
 
 img
   width 100%
@@ -60,6 +66,7 @@ section
   width 100%
   display inline-block
   text-align center
+  max-width 70rem
 
 body
   font-smooting()
@@ -81,8 +88,9 @@ body
 // home
 
 #home
+  display inline-block
   #tawba
-    margin 3em 0 0 0
+    margin 3em auto
   .headline
     img
       margin -2em 0
@@ -96,7 +104,7 @@ body
   text-transform uppercase
   font-size 2.0em
   font-family freeroad_blackregular
-  margin 0 0 .5em 0
+  margin 1em auto .5em auto 
 
 #music-acts
   display inline-block
@@ -141,7 +149,7 @@ body
   margin -2.0em 
 
 #food img
-  margin -3rem 0
+  margin -3em 0
   position relative
   z-index 1
 
@@ -250,6 +258,7 @@ body
 // about
 
 #about
+  max-width 70rem
   padding-bottom 2em
   margin-bottom 3em
   background salmon
@@ -265,6 +274,7 @@ body
 
 
 #recap-video
+  max-width 58em
   position relative
   background black
   padding-bottom 56.25%
@@ -275,13 +285,9 @@ body
     height 100%
     width 100%
 
-#maps #two
-  padding 6em 0 4em 0
-  display none
-
 #maps
-  width 100%
   height auto
+  margin 0em 1.7em
 
 // sponsors
 
@@ -349,18 +355,18 @@ body
   padding 1em
   font-family sans-serif
 
-//------------- small (every 2em) ----------------//
+// small
 
 
-@media only screen and (min-width:20.063em) // >320
+@media only screen and (min-width:20.063rem)
   #ginger
     font-size .7em
 
-@media only screen and (min-width:22.063em) // >352
+@media only screen and (min-width:22.063rem)
   #ginger
     font-size .8em
 
-@media only screen and (min-width:24.063em) // >384
+@media only screen and (min-width:24.063rem)
   #ginger
     font-size .9em
   #contact
@@ -374,9 +380,7 @@ body
   #mahem
     font-size 2.4em
 
-//@media only screen and (min-width:26.063em) // >416
-
-@media only screen and (min-width:28.063em) // >448
+@media only screen and (min-width:28.063rem)
   #ginger
     font-size 1em
   #bubbles
@@ -386,13 +390,9 @@ body
   #noma
     font-size 2.6em
 
-//----------- medium (every 3em) ----------------//
+// medium
 
-//@media only screen and (min-width:30.063em) // >480
-//@media only screen and (min-width:33.063em) // >528
-//@media only screen and (min-width:36.063em) // >576
-//@media only screen and (min-width:39.063em) // >624
-@media only screen and (min-width:42.063em) // >672
+@media only screen and (min-width:42.063rem)
   #home
     padding 3em 0 3em 0
     .headline
@@ -418,7 +418,7 @@ body
     font-size 3.5em
   #food
     img
-      width 70%
+      width 10%
     #ftf
       font-size 4.3em
   #bubbles
@@ -442,7 +442,7 @@ body
       display inline-block
     #skilstak :after
     #laketown :after
-    #ginger :after
+    #coffeehouse :after
         content '\2666'
         padding 0 .01em 0 0.07em
         color pink
@@ -451,31 +451,87 @@ body
     #aquesta :after
     #sweets :after
       content '\00A0'
+    #ginger
+      display block
 
+// large 
 
-//------------ large (every 4 em) ---------------//
+@media only screen and (min-width:45.8125rem)
+  .tier-3
+    #ginger
+      display inline-block
+    #skilstak :after
+    #coffeehouse :after
+    #aquesta :after
+        content '\2666'
+        padding 0 .01em 0 0.07em
+        color pink
+    #cooke :after
+    #laketown :after
+    #sweets :after
+    #couch :after
+      content '\00A0'
 
-//@media only screen and (min-width:45.063em) // >720
-//@media only screen and (min-width:49.063em) // >784
-//@media only screen and (min-width:53.063em) // >848
-//@media only screen and (min-width:57.063em) // >912
-//@media only screen and (min-width:61.063em) // >976
-//@media only screen and (min-width:65.063em) // >1040
+@media only screen and (min-width:49.063rem)
+  #food
+    #ftf
+      font-size 6em
+  #music
+    .music-act
+      font-size 4em
+  #about
+    font-size 2em
+  .tier-3
+    #cooke :after
+        content '\2666'
+        padding 0 .01em 0 0.07em
+        color pink
+    #couch :after
+    #ginger :after
+      content '\00A0'
 
-//------------ huge (every 5 em) ---------------//
+@media only screen and (min-width:57rem)
+  #food
+    #ftf
+      font-size 6em
+  #music
+    .music-act
+      font-size 4em
+  #about
+    font-size 2em
+  .tier-3
+    #cooke :after
+    #couch :after
+        content '\2666'
+        padding 0 .01em 0 0.07em
+        color pink
+    #ginger :after
+      content '\00A0\00A0'
 
-//@media only screen and (min-width:70.063em) // >1120
-//@media only screen and (min-width:75.063em) // >1200
-//@media only screen and (min-width:80.063em) // >1280
-//@media only screen and (min-width:85.063em) // >1360
-//@media only screen and (min-width:90.063em) // >1440
-//@media only screen and (min-width:95.063em) // >1520
-//@media only screen and (min-width:100.063em) // >1600
-//@media only screen and (min-width:105.063em) // >1680
-//@media only screen and (min-width:110.063em) // >1760
-//@media only screen and (min-width:115.063em) // >1840
+@media only screen and (min-width:58.25rem)
+  .tier-3
+    #cooke :after
+    #ginger :after
+    #couch :after
+    #aquesta :after
+        content '\2666'
+        padding 0 .01em 0 0.07em
+        color pink
+    #laketown :after
+    #coffeehouse :after
+      content '\00A0'
 
-//----------------- ginormous  ----------------//
-
-//@media only screen and (min-width:120.063em) // >1920
-
+@media only screen and (min-width:60.1rem)
+  .tier-3
+    #ginger
+      display block
+    #cooke :after
+    #laketown :after
+    #couch :after
+    #coffeehouse :after
+        content '\2666'
+        padding 0 .01em 0 0.07em
+        color pink
+    #aquesta :after
+    #ginger :after
+      content '\00A0'

@@ -23,6 +23,7 @@
    gulp \
    jade \
    marked \
+   css-em-grid \
    gulp-traceur \
    gulp-load-plugins \
    gulp-stylus \

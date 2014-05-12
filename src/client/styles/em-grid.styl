@@ -1,0 +1,104 @@
+@import normalize
+@import util
+
+global-opacity = 1
+global-z-index = 999
+
+#em-grid
+  position fixed
+  top 0
+  left 0
+  height 100%
+  width 120em
+  background cyan
+  overflow hidden
+  z-index global-z-index 
+  opacity(global-opacity)
+
+#em-grid .px
+#em-grid .col strong
+  font-size 0.7em
+  font-weight bold
+  color white
+
+#em-grid .px
+  color lightgrey
+
+#em-grid .col
+  display inline-block
+  width 1em
+  height 100%
+  overflow hidden
+  white-space wrap
+  text-align center
+
+#em-grid .bar
+  height 200%
+  width 100%
+  position relative
+  top -4em
+  left 0
+
+#em-grid .col:nth-child(even)
+  .bar
+    background black
+    opacity(.2)
+
+#em-grid.tiny
+  width 20em
+  background green
+  z-index global-z-index -1
+  .col
+    width 1em
+  .px
+    font-size 0.5em
+
+#em-grid.small
+  left 20em
+  width 10em
+  background green
+  z-index global-z-index -2
+  .col
+    width 2em
+
+#em-grid.medium
+  left 30em
+  width 15em
+  background orange
+  z-index global-z-index -3
+  .col
+    width 3em
+
+#em-grid.large
+  left 45em
+  width 32em
+  background purple
+  z-index global-z-index -4
+  .col
+    width 4em
+
+#em-grid.em80
+  left 77em
+  width 3em
+  background salmon
+  z-index global-z-index -5
+  .col
+    width 3em
+
+#em-grid.huge
+  left 80em
+  width 40em
+  background red
+  z-index global-z-index -6
+  .col
+    width 5em
+
+#em-grid.oversized
+  left 120em
+  width 100%
+  background grey
+  z-index global-z-index -7
+  .col
+    width 10em
+
+

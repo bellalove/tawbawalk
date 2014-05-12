@@ -14,10 +14,12 @@ var htmld = c.clientd,
 
 var paths = {
   stylus: [
-    c.srcClient + '/**/*.styl'
+    // broken, issue reported
+    //c.srcClient + '/**/*.styl'
+    c.srcClient + '/styles/main.styl'
   ],
   stylusSrc: [
-    c.srcClient + '/styles/**/*.styl',
+    c.srcClient + '/styles/main.styl',
     '!' + c.srcClient + '/styles/**/*~'
   ],
   stylesAsis: [

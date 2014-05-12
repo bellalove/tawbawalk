@@ -246,6 +246,7 @@ a:hover {
 #container {
   width: 100%;
   overflow: hidden;
+  text-align: center;
 }
 img {
   width: 100%;
@@ -254,6 +255,7 @@ section {
   width: 100%;
   display: inline-block;
   text-align: center;
+  max-width: 70rem;
 }
 body {
   background: #5b5268;
@@ -269,8 +271,11 @@ body {
 .headline img {
   width: 100%;
 }
+#home {
+  display: inline-block;
+}
 #home #tawba {
-  margin: 3em 0 0 0;
+  margin: 3em auto;
 }
 #home .headline img {
   margin: -2em 0;
@@ -283,7 +288,7 @@ body {
   text-transform: uppercase;
   font-size: 2em;
   font-family: freeroad_blackregular;
-  margin: 0 0 0.5em 0;
+  margin: 1em auto 0.5em auto;
 }
 #music-acts {
   display: inline-block;
@@ -331,7 +336,7 @@ body {
   margin: -2em;
 }
 #food img {
-  margin: -3rem 0;
+  margin: -3em 0;
   position: relative;
   z-index: 1;
 }
@@ -498,6 +503,7 @@ body {
   font-size: 0.8em;
 }
 #about {
+  max-width: 70rem;
   padding-bottom: 2em;
   margin-bottom: 3em;
   background: #f79983;
@@ -516,6 +522,7 @@ body {
   width: 100%;
 }
 #recap-video {
+  max-width: 58em;
   position: relative;
   background: #000;
   padding-bottom: 56.25%;
@@ -527,13 +534,9 @@ body {
   height: 100%;
   width: 100%;
 }
-#maps #two {
-  padding: 6em 0 4em 0;
-  display: none;
-}
 #maps {
-  width: 100%;
   height: auto;
+  margin: 0em 1.7em;
 }
 #sponsors {
   margin-bottom: 0.7em;
@@ -604,17 +607,17 @@ body {
   padding: 1em;
   font-family: sans-serif;
 }
-@media only screen and (min-width: 20.063em) {
+@media only screen and (min-width: 20.063rem) {
   #ginger {
     font-size: 0.7em;
   }
 }
-@media only screen and (min-width: 22.063em) {
+@media only screen and (min-width: 22.063rem) {
   #ginger {
     font-size: 0.8em;
   }
 }
-@media only screen and (min-width: 24.063em) {
+@media only screen and (min-width: 24.063rem) {
   #ginger {
     font-size: 0.9em;
   }
@@ -634,7 +637,7 @@ body {
     font-size: 2.4em;
   }
 }
-@media only screen and (min-width: 28.063em) {
+@media only screen and (min-width: 28.063rem) {
   #ginger {
     font-size: 1em;
   }
@@ -648,7 +651,7 @@ body {
     font-size: 2.6em;
   }
 }
-@media only screen and (min-width: 42.063em) {
+@media only screen and (min-width: 42.063rem) {
   #home {
     padding: 3em 0 3em 0;
   }
@@ -683,7 +686,7 @@ body {
     font-size: 3.5em;
   }
   #food img {
-    width: 70%;
+    width: 10%;
   }
   #food #ftf {
     font-size: 4.3em;
@@ -715,7 +718,8 @@ body {
     display: inline-block;
   }
   .tier-3 #skilstak :after,
-  .tier-3 #laketown :after {
+  .tier-3 #laketown :after,
+  .tier-3 #coffeehouse :after {
     content: '\2666';
     padding: 0 0.01em 0 0.07em;
     color: #ffc0cb;
@@ -723,23 +727,99 @@ body {
   .tier-3 #cooke :after,
   .tier-3 #couch :after,
   .tier-3 #aquesta :after,
-  .tier-3 #sweets :after,
-  .tier-3 #ginger :after {
+  .tier-3 #sweets :after {
     content: '\00A0';
   }
+  .tier-3 #ginger {
+    display: block;
+  }
 }
-@media only screen and (min-width: 44.92) {
-  #skilstak :after,
-  #tavern :after {
+@media only screen and (min-width: 45.8125rem) {
+  .tier-3 #ginger {
+    display: inline-block;
+  }
+  .tier-3 #skilstak :after,
+  .tier-3 #coffeehouse :after,
+  .tier-3 #aquesta :after {
     content: '\2666';
     padding: 0 0.01em 0 0.07em;
     color: #ffc0cb;
   }
-  #cooke :after,
-  #couch :after,
-  #ginger :after,
-  #aquesta :after,
-  #sweets :after {
+  .tier-3 #cooke :after,
+  .tier-3 #laketown :after,
+  .tier-3 #sweets :after,
+  .tier-3 #couch :after {
+    content: '\00A0';
+  }
+}
+@media only screen and (min-width: 49.063rem) {
+  #food #ftf {
+    font-size: 6em;
+  }
+  #music .music-act {
+    font-size: 4em;
+  }
+  #about {
+    font-size: 2em;
+  }
+  .tier-3 #cooke :after {
+    content: '\2666';
+    padding: 0 0.01em 0 0.07em;
+    color: #ffc0cb;
+  }
+  .tier-3 #couch :after,
+  .tier-3 #ginger :after {
+    content: '\00A0';
+  }
+}
+@media only screen and (min-width: 57rem) {
+  #food #ftf {
+    font-size: 6em;
+  }
+  #music .music-act {
+    font-size: 4em;
+  }
+  #about {
+    font-size: 2em;
+  }
+  .tier-3 #cooke :after,
+  .tier-3 #couch :after {
+    content: '\2666';
+    padding: 0 0.01em 0 0.07em;
+    color: #ffc0cb;
+  }
+  .tier-3 #ginger :after {
+    content: '\00A0\00A0';
+  }
+}
+@media only screen and (min-width: 58.25rem) {
+  .tier-3 #cooke :after,
+  .tier-3 #ginger :after,
+  .tier-3 #couch :after,
+  .tier-3 #aquesta :after {
+    content: '\2666';
+    padding: 0 0.01em 0 0.07em;
+    color: #ffc0cb;
+  }
+  .tier-3 #laketown :after,
+  .tier-3 #coffeehouse :after {
+    content: '\00A0';
+  }
+}
+@media only screen and (min-width: 60.1rem) {
+  .tier-3 #ginger {
+    display: block;
+  }
+  .tier-3 #cooke :after,
+  .tier-3 #laketown :after,
+  .tier-3 #couch :after,
+  .tier-3 #coffeehouse :after {
+    content: '\2666';
+    padding: 0 0.01em 0 0.07em;
+    color: #ffc0cb;
+  }
+  .tier-3 #aquesta :after,
+  .tier-3 #ginger :after {
     content: '\00A0';
   }
 }
